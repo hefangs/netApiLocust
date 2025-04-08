@@ -6,8 +6,8 @@ class StressTestUser(HttpUser):
 
     @task
     def catlist_page(self):
-        self.client.get("/playlist/catlist")  # 请求接口1
+        self.client.get("/playlist/catlist")
 
     @task
     def hot_page(self):
-        self.client.get("/playlist/hot")  # 请求接口2
+        self.client.get("/playlist/hot")
